@@ -1,0 +1,33 @@
+<!DOCTYPE >
+
+<html>
+  <head>
+    <title>Random number</title>
+  </head>
+</html>
+<link rel="stylesheet" href="style.css" />
+<body>
+  <h1 id="h1" class="heading">Guess The Number</h1>
+
+  <div id="inp">
+    <label for="numMin">Input your range</label>
+    <input type="text" id="numMin" value="" /> to
+    <input type="text" id="numMax" value="" />
+    <br />
+    <br />
+    <input value="" id="guess" />
+
+    <br />
+    <br />
+
+    <label id="labelInput"></label>
+  </div>
+  <div id="button">
+    <button type="submit" id="guessBtn">Guess</button>
+    <button id="new" type="submit" onclick="New()">New Number</button>
+  </div>
+  <p id="tries">Tries:</p>
+  <p id="output"></p>
+  <p id="p2"></p>
+  <script src="script.js"></script>
+</body>

@@ -1,0 +1,213 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 100px;
+  border: 3px solid blueviolet;
+  border-radius: 15px;
+  display: flow-root;
+  /*background-image: url(media/OIP-1897382294.jpg);*/
+  background-repeat: repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-position-x: -99;
+  color: white;
+  background-color: black;
+}
+pre {
+  color: white;
+  overflow: auto;
+}
+
+#h1 {
+  color: aliceblue;
+  text-shadow:
+    3px 3px 5px blueviolet,
+    -3px -3px 5px greenyellow;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+/*box with shadow*/
+#box1 {
+  position: relative;
+  height: 500px;
+  width: 500px;
+  background-color: red;
+  box-shadow: 5px 5px 5px black;
+  border-radius: 50px;
+  margin-bottom: 50px;
+  margin: auto;
+  z-index: -1;
+}
+/* css for the text in box */
+#b1txt {
+  position: absolute;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 40px;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box {
+  border: 5px solid rosybrown;
+  font-size: 5em;
+  width: 250px;
+  height: 250px;
+  border-radius: 50px;
+  flex-wrap: warp;
+  flex-direction: row;
+  flex-flow: row;
+  animation-name: rotate;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes rotate-2 {
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+#boxa {
+  background-color: greenyellow;
+  margin-bottom: 50px;
+  box-shadow: 3px 3px 5px black;
+  margin: auto;
+  text-align: center;
+}
+
+#boxa:hover {
+  height: 300px;
+  width: 300px;
+  background-color: purple;
+  margin-bottom: 50px;
+  box-shadow: 10px 10px 10px black;
+  margin: auto;
+  text-align: center;
+}
+
+#boxb {
+  background-color: purple;
+  box-shadow: 3px 3px 5px black;
+  margin: auto;
+  text-align: center;
+}
+
+#boxb:hover {
+  height: 300px;
+  width: 300px;
+  background-color: greenyellow;
+  box-shadow: 10px 10px 10px black;
+  margin: auto;
+  text-align: center;
+}
+
+#boxtxt {
+  margin: 100px;
+}
+
+.media {
+  margin-bottom: 50px;
+}
+
+#p1 {
+  text-align: center;
+  margin: auto;
+  overflow: auto;
+}
+
+#img1 {
+  float: left;
+  margin: auto;
+}
+
+#para {
+  padding: 25px;
+  margin: 50px;
+  border: 3px solid orange;
+  border-radius: 15px;
+  background-color: #000;
+  overflow: auto;
+  color: white;
+  box-shadow: 5px 5px 5px orange;
+}
+
+#navbar a {
+  font-size: 40px;
+}
+
+#navbar {
+  z-index: 99;
+  height: 6%;
+  width: 80%;
+  border-radius: 50px;
+
+  position: sticky;
+  top: 1px;
+  font-weight: bold;
+  flex-wrap: wrap;
+  align-content: flex;
+  background-color: white;
+  overflow: visible;
+  padding: 0px 12px;
+  text-align: center;
+  animation-name: flow-down;
+  animation-duration: 1s;
+}
+
+@keyframes flow-down {
+  from {
+    transform: translateY(-300%);
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+  color: yellow;
+  font-size: 30px;
+  background-color: black;
+  border-radius: 25px;
+  text-align: center;
+  margin: 1 40px;
+  border: 4px solid lightseagreen;
+}
+
+li:hover {
+  color: red;
+  font-size: 30px;
+  background-color: green;
+  border-radius: 25px;
+  text-align: center;
+  border: 4px double black;
+  margin: 0 10px;
+  animation-name: grow;
+  animation-duration: 0.5s;
+}
+
+#container:hover + li {
+  color: lightblue;
+  font-size: 50px;
+  background-color: red;
+  border-radius: 35px;
+  text-align: center;
+  border: 12px double black;
+  margin: 1 10px;
+}
+
+@keyframes grow {
+  50% {
+    transform: scale(1.04, 1.5);
+  }
+}
